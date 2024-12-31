@@ -36,12 +36,19 @@ public class LambdaExample1 {
             System.out.println("draw method  of rectangle");
         };
 
+        Shape circle = () -> System.out.println("draw method of circle");
+
+        Shape square = () -> System.out.println("draw method of square");
+
         rectangle.draw();
+        circle.draw();
+        square.draw();
      //   The Shape interface is used as the type for the rectangle variable.
-  //     The rectangle variable is assigned a lambda expression that provides the implementation
-        //     for the draw() method.
+  //     The rectangle variable is assigned a lambda expression that provides the implementation for the draw() method.
 
-
+  //      (): Represents the parameter list of the method; empty because draw() takes no arguments.
+//->: The lambda operator or arrow tokem separates parameters from the method body.
+ //       {}: The body of the lambda expression containing the implementation of the method.
 
     }
 }
