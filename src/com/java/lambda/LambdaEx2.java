@@ -7,13 +7,23 @@ public class LambdaEx2 {
         void draw();
     }
 
+    // passing functional interface variable as a method parameter
     public static void main(String[] args){
 
         Shape rectangle = () -> System.out.println("draw method of rectangle");
+       // rectangle.draw();
 
-        // passing functional interface variable as a method parameter
+        Shape circle = () -> System.out.println("draw method of circle");
 
-     print(rectangle);
+       // Shape square = () -> System.out.println("draw method of square");
+        // square.draw();
+
+        print(rectangle);
+        print(circle);
+
+        // directly passing lambda expression
+        print(()->System.out.println("draw method of square"));
+
 
     }
 
